@@ -15,10 +15,7 @@ Esta é a primeira aula da nossa jornada para aprender React, uma extensão do J
     - Modelo fácil de interações com usuários
     - empregabilidade (empresas que usam: Meta, Netflix, <+2 exemplos>)
 
-## Como o React funciona na Prática? - Leo vai construir exemplo Vanilla
-
-
-
+## Como o React funciona na Prática? - Leo vai construir exemplo Vanilla e passo-a-passo; Andre fazer passo-a-passo React
 
 
 ## Material Complementar
