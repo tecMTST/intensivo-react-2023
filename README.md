@@ -1,1 +1,1 @@
-# intensivo-react-2023
+# Intensivo React 2023 - Núcleo de Tecnologia
