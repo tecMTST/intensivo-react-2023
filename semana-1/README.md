@@ -4,6 +4,24 @@ Bem vindes ao Intensivo 2023 de React do Núcleo de Tecnologia do MTST!
 
 Esta é a primeira aula da nossa jornada para aprender React, uma extensão do JavaScript que nos ajudarão a dar o próximo passo no desenvolvimento de sites.
 
+
+## Alinhando expectativas
+
+* Objetivo:
+    * Aprender React mexendo com o site do núcleo do MTST https://nucleodetecnologia.com.br/
+
+* Duração:
+    * maio/junho
+    * possivelmente renovando por mais dois meses (depende da disponibilidade dos tutores)
+* Funcionamento: 
+    * Aulas semanais de 1 hora
+    * Plantões semanais também de uma hora
+    * Grupos de 2/3 alunos com um tutor
+
+* Expectativa:
+    * No fim desses dois meses esperamos aprender mais sobre react e;
+    * Consigamos reproduzir algumas partes do site do núclelo usando React
+
 ## Por que React?
 - Facilita o desenvolvimento de websites que demandam interações do usuário
 - Pré-requisitos simples: HTML, CSS e Javascript
