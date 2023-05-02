@@ -4,16 +4,13 @@ Bem vindes ao Intensivo 2023 de React do Núcleo de Tecnologia do MTST!
 
 Esta é a primeira aula da nossa jornada para aprender React, uma extensão do JavaScript que nos ajudarão a dar o próximo passo no desenvolvimento de sites.
 
-## Por que React? - Andre
-
-    Ponte entre o que eles já sabem (ponto de partida: HTML+CSS+JS) -> despertar o interesse e problemas que o react resolve melhor que HTML+CSS+JS
-    - HTML+CSS+JS resolvem problemas simples, mas não aplicações mais complexas. React ajudar a manter organizado e fácil de manter
-    - HTML+CSS+JS não permitem uma maneira inteligente de trabalhar com multiplos arquivos. React carrega somente codigo e elementos que serão utilizados
-    - Padronização da solução de problemas: dividir o código em múltiplos arquivos, modularização de componentes, performance, manutenção
-
-    Por que usar React - 10 minutos
-    - Modelo fácil de interações com usuários
-    - empregabilidade (empresas que usam: Meta, Netflix, <+2 exemplos>)
+## Por que React?
+- Facilita o desenvolvimento de websites que demandam interações do usuário
+- Pré-requisitos simples: HTML, CSS e Javascript
+- Mais organizado, cada arquivo vai guardar o código de um pedaço do site. Depois de prontos, juntaremos estes pedaços para montar nossa interface
+- Empregabilidade: React é a principal ferramenta de desenvolvimento web hoje em dia e inúmeras empresas, grandes e pequenas, a utilizam. Algumas empresas conhecidas são: Twitter, Netflix, Uber, Facebook + Instagram (Meta)
+- Performance: com React, somente os elementos utilizados na página são carregados, e não o código todo como acontece geralmente com o modo convencional de desenvolvimento
+- Padronização da solução de problemas. Independente da empresa ou organização onde trabalham, desenvolvedores React utilizam o mesmo conceito para tarefas comuns como: dividir o código em múltiplos arquivos, modularização de componentes, performance, manutenção e etc.
 
 ## Como o React funciona na Prática? - Leo vai construir exemplo Vanilla e passo-a-passo; Andre fazer passo-a-passo React
 
