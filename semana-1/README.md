@@ -60,5 +60,5 @@ Vamos fazer um site simples, que mostra alguns retângulos na tela com textos de
 Acesse o passo-a-passo de [como construir a versão HTML, CSS e JS puros aqui](./exemplo_html_css_js.md). No final desse guia você encontrará o passo-a-passo de como construir a versão React.
 
 ## Material Complementar
-- [DevMedia - REACT.JS Primeiros passos - 9 minutos](https://www.youtube.com/watch?v=SQsR0KA-oew)
-- [Código Fonte TV - React JS // Dicionário do Programador](https://www.youtube.com/watch?v=NhUr8cwDiiM)
+- [DevMedia - REACT.JS Primeiros passos](https://www.youtube.com/watch?v=SQsR0KA-oew) - 9 minutos
+- [Código Fonte TV - React JS // Dicionário do Programador](https://www.youtube.com/watch?v=NhUr8cwDiiM) - 10 minutos
