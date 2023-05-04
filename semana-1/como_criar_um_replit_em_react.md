@@ -7,7 +7,7 @@
 * na tela que aparecer escreve 'react' no campo destacado
 ![image](https://user-images.githubusercontent.com/21227797/235801677-0a65b682-753e-458e-84be-1018b76b726c.png)
 
-* selecione 'react javascript' e opcionalmente dê um nome para seu projeto
+* selecione 'react javascript' (terceira opção na imagem acima) e opcionalmente dê um nome para seu projeto
 ![image](https://user-images.githubusercontent.com/21227797/235801808-5f69d63c-569b-46c9-ab17-344295d9b3c8.png)
 
 * clique no botão de criar replit
