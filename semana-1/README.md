@@ -11,6 +11,7 @@ Esta é a primeira aula da nossa jornada para aprender React, uma extensão do J
 * Duração:
     * maio/junho
     * possivelmente renovando por mais dois meses (depende da disponibilidade dos tutores)
+
 * Funcionamento: 
     * Aulas semanais de 1 hora
     * Plantões semanais também de uma hora
@@ -55,11 +56,8 @@ desenvolvimento de sites quando saímos do HTML, CSS e JS convencionais e vamos 
 
 Vamos fazer um site simples, que mostra alguns retângulos na tela com textos dentro. Vamos fazer este mesmo site com HTML, CSS e JS puros e depois o mesmo site com React.
 
-Acesse o passo-a-passo de [como construir a versão HTML, CSS e JS puros aqui](./exemplo_html_css_js.md).
-
-Acesse o passo-a-passo de [como construir a versão React aqui](./exemplo_react.md).
+Acesse o passo-a-passo de [como construir a versão HTML, CSS e JS puros aqui](./exemplo_html_css_js.md). No final desse guia você encontrará o passo-a-passo de como construir a versão React.
 
 ## Material Complementar
-
 - [DevMedia - REACT.JS Primeiros passos - 9 minutos](https://www.youtube.com/watch?v=SQsR0KA-oew)
 - [Código Fonte TV - React JS // Dicionário do Programador](https://www.youtube.com/watch?v=NhUr8cwDiiM)
