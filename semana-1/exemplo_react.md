@@ -124,6 +124,8 @@ export default function App() {
 }
 ```
 
+No Passo 1 acima, temos outra novidade: o uso da palavra `import`. Não vamos entrar em detalhes agora, mas tenha em mente que o `import` neste caso funciona junto com o `export default` que utilizamos lá dentro do componente Card. Vamos explorar melhor esta funcionalidade durante o intensivo.
+
 Pronto! Agora nosso site está exibindo corretamente o `Card` que criamos no arquivo `Card.jsx` 🎊. Perceba que o componente `Card` é utilizado como se fosse uma tag HTML no React, o que facilita muito o desenvolvimento de sites.
 
 Agora, faça um teste. O que acontece se adicionarmos mais componentes `Card` no código? Tente executar o seu projeto com o seguinte conteúdo no arquivo `App.jsx`:
