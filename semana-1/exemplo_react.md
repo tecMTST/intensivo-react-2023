@@ -1,7 +1,7 @@
 # Aula 01 - Começando com React
 Crie um novo Replit utilizando [este link](https://replit.com/@replit/React-Javascript). Para mais detalhes em como criar o Replit, [acesse nosso guia](./como_criar_um_replit_em_react.md).
 
-## Criando um novo arquivo para nosso componente
+## Passo 1 - Criando um novo arquivo para nosso componente
 
 No Replit, localize os arquivos do seu projeto e a pasta `src`. Ao lado desta pasta, clique nos três pontinhos e selecione "Add file" (Adicionar Arquivo):
 
@@ -13,7 +13,7 @@ O nome do novo arquivo deve ser **Card.jsx**:
 
 Quando criamos arquivos Javascript, colocamos `.js` no final. Mas o nome do nosso arquivo tem `jsx` no final, indicando que ele é um arquivo do React.
 
-## Criando o nosso primeiro Componente react
+## Passo 2 - Criando o nosso primeiro Componente react
 
 No novo arquivo `Card.jsx` criado, vamos colocar o seguinte código:
 
@@ -31,7 +31,7 @@ export default function Card() {
 
 A primeira coisa que podemos observar neste código é que aparentemente temos HTML (tags `div` e `p`) dentro de uma `function`, que faz parte do Javascript. O React torna possível a combinação de HTML com Javascript em um mesmo arquivo. Vamos quebrar esse código acima para entender todas as partes:
 
-### Parte 1 - Javascript
+### Parte 1: Javascript
 
 Vamos começar pela definição da função chamada `Card`. O pedaço do código que veremos abaixo não tem novidade:
 ```js
@@ -42,7 +42,7 @@ function Card() {
 
 Neste pedaço do código, estamos definindo uma função chamada `Card` e dentro dela existe algo sendo retornado.
 
-### Parte 2 - HTML dentro do Javascript
+### Parte 2: HTML dentro do Javascript
 
 Agora vamos olhar o que vem depois do `return` no nosso arquivo `Card.jsx`:
 ```html
@@ -57,7 +57,7 @@ Este código acima também não tem novidade, estamos utilizando uma tag `div` q
 
 A novidade, porém, é que este código está sendo utilizado dentro do Javascript. Mais que isso, **este código HTML está servindo como retorno de uma função Javascript** (pois vem logo após a palavra `return` no código). Isso significa que quando utilizarmos o componente `Card`, o React vai nos dar este código HTML como resultado.
 
-### Parte 3 - Exportar variáveis
+### Parte 3: Exportar variáveis ou funções
 
 Vamos analisar agora a ultima parte do código:
 
@@ -65,9 +65,9 @@ Vamos analisar agora a ultima parte do código:
 export default ...
 ```
 
-Utilizamos o `export default` no Javascript quando desejamos que uma variável ou função de um arquivo esteja disponível para uso em outro arquivo. Não se preocupe se não entendeu o conceito agora, vamos explorar esta funcionalidade mais a fundo durante o intensivo.
+Utilizamos o `export default` no Javascript quando desejamos que uma variável ou função de um arquivo esteja disponível para uso em outro arquivo. Precisamos dessa funcionalidade pois cada componente terá seu próprio arquivo. Não se preocupe se não entendeu o conceito agora, vamos explorar esta funcionalidade mais a fundo durante o intensivo.
 
-## Utilizando o componente criado
+## Passo 3 - Utilizando o componente criado
 
 Já temos o nosso primeiro componente React 🎉. Lembra da analogia que fizemos com pecinhas de Lego? Agora o componente Card é como se fosse uma pecinha de Lego, pronta para ser encaixada. Precisamos encaixar essa peça para podermos ver o resultado na tela. O arquivo `App.jsx` é o local onde vamos montar nosso site e encaixar nossas pecinhas.
 
@@ -108,7 +108,7 @@ Agora temos um site limpo e estamos prontos para adicionar o componente `Card`. 
 1. Importar o componente Card
 2. Utilizar o componente Card
 
-No código abaixo estamos aplicando estes 2 passos. Veja nos comentários do código onde cada passo é feito:
+No código abaixo estamos aplicando estas 2 alterações. Veja nos comentários do código onde cada alteração é feita:
 
 ```jsx
 import './App.css'
@@ -124,7 +124,9 @@ export default function App() {
 }
 ```
 
-No Passo 1 acima, temos outra novidade: o uso da palavra `import`. Não vamos entrar em detalhes agora, mas tenha em mente que o `import` neste caso funciona junto com o `export default` que utilizamos lá dentro do componente Card. Vamos explorar melhor esta funcionalidade durante o intensivo.
+Na alteração 1 acima, temos outra novidade: o uso da palavra `import`. Não vamos entrar em detalhes agora, mas tenha em mente que o `import` neste caso funciona junto com o `export default` que utilizamos lá dentro do componente Card. Vamos explorar melhor esta funcionalidade nas próximas aulas.
+
+## Passo 4 - Explorando o uso do Componente `Card`
 
 Pronto! Agora nosso site está exibindo corretamente o `Card` que criamos no arquivo `Card.jsx` 🎊. Perceba que o componente `Card` é utilizado como se fosse uma tag HTML no React, o que facilita muito o desenvolvimento de sites.
 
@@ -145,4 +147,8 @@ export default function App() {
 }
 ```
 
-O que acontece? Qual o resultado do código acima?
+Qual o resultado do código acima?
+
+## Próximos passos
+
+Você chegou ao final da primeira Aula do Intensivo React 2023! Recomendamos que você assista os [2 vídeos listados nos materiais complementares dessa aula](./README.md#material-complementar). 
