@@ -27,12 +27,13 @@ O React é uma ferramenta criada pelo Facebook em 2013 e hoje em dia é amplamen
 
 React é uma ferramenta para construção de websites. A palavra "React" vem do inglês "Reagir". Em outras palavras, o React ajuda o programador a interpretar e "reagir" às informações que o usuário coloca no site. Abaixo, vamos explorar mais esta definição.
 
-Quando desenvolvemos um website, precisamos capturar a interação do usuário. Imagine, por exemplo, que você está desenvolvendo um site para venda de salgadinhos de festa. Nesse site, as pessoas **escolhem os salgados, as quantidades e informam o endereço para entrega**. Perceba que nesse site têm muitas interações do usuário. A todo momento o usuário tem que informar o que quer, e o site precisa **reagir** à informação que a pessoa deu. Por exemplo, se o usuário colocar um endereço muito distante, o site tem que reagir e informar que não é possível a entrega. Ou se a pessoa pedir mais salgados do que tem disponível, o site tem que reagir à informação e dizer para o usuário que não é possível fazer o pedido.
+Quando desenvolvemos um website, precisamos capturar a interação do usuário. Imagine, por exemplo, que você está desenvolvendo um site para venda de salgadinhos de festa. Nesse site, as pessoas **escolhem os salgados, as quantidades e informam o endereço para entrega**. Perceba que nesse site têm muitas interações do usuário. A todo momento o usuário tem que informar o que quer, e o site precisa **reagir** à informação que a pessoa deu. Por exemplo, se o usuário colocar um endereço muito distante para a entrega, o site tem que reagir e informar que não é possível continuar. Ou se a pessoa pedir mais salgados do que tem disponível, o site tem que reagir à informação dizendo para o usuário que não é possível fazer o pedido.
 
 O React é uma ferramenta que facilita muito a criação e manutenção de um site como o descrito acima.
 
 ## Por que React?
 
+Alguns motivos do porquê aprender React: 
 - Alta demanda no mercado de trabalho: React é a principal ferramenta de desenvolvimento web hoje em dia e inúmeras empresas, grandes e pequenas, a utilizam. Algumas empresas conhecidas são: Twitter, Netflix, Uber, Facebook + Instagram (Meta)
 - Facilita o desenvolvimento de websites que demandam interações do usuário por conta da sua arquitetura baseada em componentes
 - Pré-requisitos simples: HTML, CSS e Javascript
