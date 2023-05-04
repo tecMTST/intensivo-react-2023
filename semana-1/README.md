@@ -41,7 +41,7 @@ Alguns motivos do porquê aprender React:
 - Padronização da solução de problemas. Independente da empresa ou organização onde trabalham, desenvolvedores React utilizam o mesmo conceito para tarefas comuns como: dividir o código em múltiplos arquivos, modularização de componentes, performance, manutenção e etc
 
 ## O que são os componentes?
-Os componentes em React são blocos de construção reutilizáveis que permitem criar interfaces de usuário dinâmicas e interativas. Eles são como peças de Lego que podem ser combinadas para construir uma aplicação web completa.
+Os componentes em React são blocos de construção reutilizáveis que permitem criar interfaces de usuário dinâmicas e interativas. Eles são como peças de Lego que podem ser combinadas para construir um site completo.
 
 Vamos imaginar agora como são estes componentes na prática. Imagine que você está fazendo um site para um restaurante, onde os fregueses podem reservar uma mesa. O site tem um Cabeçalho, o Cardápio e um Formulário para Reserva. Neste cenário podemos imaginar 3 componentes React:
 - Cabeçalho
