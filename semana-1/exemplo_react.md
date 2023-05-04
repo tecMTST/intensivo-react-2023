@@ -128,6 +128,7 @@ Pronto! Agora nosso site está exibindo corretamente o `Card` que criamos no arq
 
 Agora, faça um teste. O que acontece se adicionarmos mais componentes `Card` no código? Tente executar o seu projeto com o seguinte conteúdo no arquivo `App.jsx`:
 
+```
 import './App.css'
 import Card from './Card'
 
