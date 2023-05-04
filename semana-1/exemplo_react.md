@@ -4,3 +4,4 @@ Crie um novo Replit utilizando [este link](https://replit.com/@replit/React-Java
 ## Criando um novo arquivo para nosso componente
 
 No Replit, localize os arquivos do seu projeto e a pasta `src`. Ao lado desta pasta, clique nos três pontinhos e selecione "Add file" (Adicionar Arquivo). O nome do novo arquivo deve ser **Card.jsx**.
+

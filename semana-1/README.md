@@ -1,9 +1,7 @@
 # Aula 1
-
 Bem vindes ao Intensivo 2023 de React do Núcleo de Tecnologia do MTST!
 
 Esta é a primeira aula da nossa jornada para aprender React, uma extensão do JavaScript que nos ajudarão a dar o próximo passo no desenvolvimento de sites.
-
 
 ## Alinhando expectativas
 
@@ -23,17 +21,14 @@ Esta é a primeira aula da nossa jornada para aprender React, uma extensão do J
     * Consigamos reproduzir algumas partes do site do núclelo usando React
 
 ## O que é o React?
-Sure, I'd be happy to explain what React is and how it works!
 
-React is a popular Javascript library used for building user interfaces (UIs) on the web. It was created by Facebook and is now widely used by developers all around the world.
+O React é uma ferramenta criada pelo Facebook em 2013 e hoje em dia é amplamente utilizada por pessoas desenvolvedoras no mundo todo. 
 
-To understand how React works, let's imagine that you're building a house. When building a house, you might start with a blueprint that shows how everything is going to fit together. In the same way, React provides a blueprint or framework for building user interfaces. It gives you the tools and building blocks you need to create a UI that is functional and easy to use.
+React é uma ferramenta para construção de websites. A palavra "React" vem do inglês "Reagir". Em outras palavras, o React ajuda o programador a interpretar e "reagir" às informações que o usuário coloca no site. Abaixo, vamos explorar mais esta definição.
 
-Now let's say that you want to add some furniture to your house. You could go out and buy individual pieces of furniture and try to fit them into your space, but it might not look very cohesive. Instead, you could buy a furniture set that is designed to work well together and fits perfectly in your space. In React, you can think of components as the individual pieces of furniture that make up your UI. Each component is designed to work well with the others and fit seamlessly into the overall design.
+Quando desenvolvemos um website, precisamos capturar a interação do usuário. Imagine, por exemplo, que você está desenvolvendo um site para venda de salgadinhos de festa. Nesse site, as pessoas **escolhem os salgados, as quantidades e informam o endereço para entrega**. Perceba que nesse site têm muitas interações do usuário. A todo momento o usuário tem que informar o que quer, e o site precisa **reagir** à informação que a pessoa deu. Por exemplo, se o usuário colocar um endereço muito distante, o site tem que reagir e informar que não é possível a entrega. Ou se a pessoa pedir mais salgados do que tem disponível, o site tem que reagir à informação e dizer para o usuário que não é possível fazer o pedido.
 
-For example, let's say that you're building a website for a restaurant. You might have a component for the header, another for the menu, and another for the reservation form. Each of these components can be built separately and then combined to create the final UI. This makes it easy to update and modify each component as needed without having to rewrite the entire application.
-
-In summary, React is a library for building user interfaces that provides a framework for creating functional and cohesive UIs. Components are the building blocks of a React application and are designed to work well together to create a seamless user experience.
+O React é uma ferramenta que facilita muito a criação e manutenção de um site como o descrito acima.
 
 ## Por que React?
 
@@ -43,13 +38,26 @@ In summary, React is a library for building user interfaces that provides a fram
 - O React é um projeto de código aberto onde milhares de pessoas contribuem constantemente com melhorias e atualizações
 - Padronização da solução de problemas. Independente da empresa ou organização onde trabalham, desenvolvedores React utilizam o mesmo conceito para tarefas comuns como: dividir o código em múltiplos arquivos, modularização de componentes, performance, manutenção e etc
 
-### O que são os componentes?
+## O que são os componentes?
 Os componentes em React são blocos de construção reutilizáveis que permitem criar interfaces de usuário dinâmicas e interativas. Eles são como peças de Lego que podem ser combinadas para construir uma aplicação web completa.
 
-Imagine que você está fazendo um site para um restaurante muito movimentado. Neste site os fregueses podem reservar uma mesa. O site tem esta estrutura:
+Vamos imaginar agora como são estes componentes na prática. Imagine que você está fazendo um site para um restaurante, onde os fregueses podem reservar uma mesa. O site tem um Cabeçalho, o Cardápio e um Formulário para Reserva. Neste cenário podemos imaginar 3 componentes React:
+- Cabeçalho
+- Cardápio
+- Formulário de Reserva
 
-## Como o React funciona na Prática? - Leo vai construir exemplo Vanilla e passo-a-passo; Andre fazer passo-a-passo React
+Uma vez que temos os 3 componentes, podemos utilizá-los para montar o site do restaurante.
 
+Chega de teoria! Agora vamos ver React na prática, e o que muda no 
+desenvolvimento de sites quando saímos do HTML, CSS e JS convencionais e vamos para o React.
+
+## Como o React funciona na Prática?
+
+Vamos fazer um site simples, que mostra alguns retângulos na tela com textos dentro. Vamos fazer este mesmo site com HTML, CSS e JS puros e depois o mesmo site com React.
+
+Acesse o passo-a-passo de [como construir a versão HTML, CSS e JS puros aqui](./exemplo_html_css_js.md).
+
+Acesse o passo-a-passo de [como construir a versão React aqui](./exemplo_react.md).
 
 ## Material Complementar
 
