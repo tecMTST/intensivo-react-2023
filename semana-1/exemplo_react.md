@@ -105,8 +105,8 @@ export default function App() {
 ```
 
 Agora temos um site limpo e estamos prontos para adicionar o componente `Card`. Para isso, duas alterações são necessárias no `App.jsx`:
-1. Importar o componente Card
-2. Utilizar o componente Card
+1. **Importar** o componente Card
+2. **Utilizar** o componente Card
 
 No código abaixo estamos aplicando estas 2 alterações. Veja nos comentários do código onde cada alteração é feita:
 
@@ -125,6 +125,20 @@ export default function App() {
 ```
 
 Na alteração 1 acima, temos outra novidade: o uso da palavra `import`. Não vamos entrar em detalhes agora, mas tenha em mente que o `import` neste caso funciona junto com o `export default` que utilizamos lá dentro do componente Card. Vamos explorar melhor esta funcionalidade nas próximas aulas.
+
+Antes de passar para o passo seguinte, vamos adicionar o estilo do Card. Vá no arquivo `App.css` e coloque o seguinte código:
+
+```css
+div {
+  text-align: center;
+  vertical-align: center;
+  line-height: 80px;
+  border: 1px solid orange;
+  margin-bottom: 8px;
+}
+```
+
+Rode o projeto. O que aconteceu?
 
 ## Passo 4 - Explorando o uso do Componente `Card`
 
