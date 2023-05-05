@@ -72,6 +72,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac lobortis neque.
         <p>
             Este é o card
         </p>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
