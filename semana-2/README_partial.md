@@ -25,7 +25,7 @@ Agora que entendemos sobre projetos padronizados de JavaScript e sobre o process
 
 ### Estudando os arquivos gerados a partir de um projeto novo
 
-Quando geramos um projeto novo, vamos ver os seguintes arquivos criados para nós:
+Agora vamos voltar ao componente que criamos agora há pouco. Os seguintes arquivos foram criados automaticamente pelo Replit para nós:
 ```
 - src/
     - index.js
@@ -38,5 +38,5 @@ Quando geramos um projeto novo, vamos ver os seguintes arquivos criados para nó
 - **`package.json`**: esse arquivo não é especial do React, já que faz parte de um Projeto Padronizado de JavaScript. Vamos mexer nesse arquivo quando precisarmos adicionar bibliotecas ao nosso projeto
 - **`package-lock.json`**: é um arquivo gerado automaticamente a partir do `package.json`, também faz parte do padrão de projeto
 - **`src/index.jsx`**: este é o primeiro arquivo que seu projeto vai executar. É ele que faz a inicialização e execução do React
-- **`App.jsx`**: um primeiro componente que já vem criado para nós com um conteúdo de exemplo. _App_ significa "Aplicação" e nesse caso pode se referir à uma aplicação mobile ou aplicação no sentido de "website". É uma boa prática manter o `App` e organizar nosso site aqui dentro. Podemos remover este componente, ele é opcional. Porém, se removermos precisamos alterar o `index.jsx` e remover a utilização do `<App/>`
 - **`App.css`**: arquivo de estilos do componente `App` que já vem criado para nós
+- **`App.jsx`**: um primeiro componente que já vem criado para nós com um conteúdo de exemplo. _App_ significa "Aplicação" e nesse caso pode se referir à uma aplicação mobile ou aplicação no sentido de "website". É uma boa prática manter o `App` e organizar nosso site aqui dentro. Podemos remover este componente, ele é opcional. Porém, se removermos precisamos alterar o `index.jsx` e remover a utilização do `<App/>`. Faça um teste aqui, remova o `<App/>` do `index.jsx` e adicione o componente que foi criado na aula. O que acontece?
