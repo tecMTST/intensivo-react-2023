@@ -27,6 +27,7 @@ Agora que entendemos sobre projetos padronizados de JavaScript e sobre o process
 
 Agora vamos voltar ao componente que criamos agora há pouco. Os seguintes arquivos foram criados automaticamente pelo Replit para nós:
 ```
+- public/
 - src/
     - index.js
     - App.jsx
@@ -35,6 +36,7 @@ Agora vamos voltar ao componente que criamos agora há pouco. Os seguintes arqui
 - package-lock.json
 ```
 
+- **`public/`**: TODO
 - **`package.json`**: esse arquivo não é especial do React, já que faz parte de um Projeto Padronizado de JavaScript. Vamos mexer nesse arquivo quando precisarmos adicionar bibliotecas ao nosso projeto
 - **`package-lock.json`**: é um arquivo gerado automaticamente a partir do `package.json`, também faz parte do padrão de projeto
 - **`src/index.jsx`**: este é o primeiro arquivo que seu projeto vai executar. É ele que faz a inicialização e execução do React
