@@ -1,3 +1,44 @@
+## Detalhando o projeto no Replit
+Agora vamos entender um pouco mais do funcionamento do React a alguns conceitos sendo aplicados no nosso código
+
+### `import/export` (importar e exportar)
+
+Já vimos isso algumas vezes quando criando e utilizando componentes. Exportar e importar são funcionalidades usadas para que possamos ter multiplos arquivos no nosso projeto. Como cada arquivo é 1 componente, precisamos exportar o conteúdo do arquivo para que, em outra arquivo, o componente seja importado. 
+
+Para enteder na prática, crie um novo arquivo chamado `Titulo.jsx` e coloque o seguinte conteúdo nele:
+
+```jsx
+export default function Titulo() {
+    return (
+        <h1>Meu Título Aqui</h1>
+    )
+}
+```
+
+Agora vá no `App.jsx` e adicione o componente no nosso HTML:
+
+```jsx
+import './App.css'
+import BannerInicio from './componentes/BannerInicio'
+
+export default function App() {
+  return (
+    <main>
+      <Titulo></Titulo>
+      <BannerInicio></BannerInicio>
+    </main>
+  )
+}
+```
+
+Este código acima vai apresentar um erro. Consegue identificar por que? No arquivo `Titulo.jsx` estamos exportando o componente corretamente com `export default`, mas no arquivo `App.jsx` não estamos importando este arquivo. Está faltando a seguinte linha:
+
+```jsx
+import Titulo from './componentes/Titulo'
+```
+
+O que acontece quando importamos corretamente? Lembre-se o export é necessário para que possamos importar o componente em outro arquivo. E o import é necessário para que possamos utilizar e ver o componente na tela.
+
 ### Projeto Padronizado de JavaScript
 
 Todo projeto de JavaScript deve seguir um padrão. Este padrão ajuda na hora de compartilhar nosso código, ou na hora de utilizar códigos que já foram compartilhados por outras pessoas. Esses projetos que podem ser compartilhados também levam o nome de Biblioteca. 
