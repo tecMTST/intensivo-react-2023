@@ -9,3 +9,7 @@ A partir daqui iremos ver como criar um componente do zero e renderiza-lô ná p
 ## Observando a Estrutura de um projeto React mais de perto
 
 Agora que já estamos confortáveis em criar novos componentes, vamos observar os outros arquivos no nosso projeto e alguns conceitos extras como `export/import`, o que são Bibliotecas, quais arquivos precisamos ter no projeto e mais. [Acesse o próximo passo aqui](./detalhando_o_projeto_no_replit.md).
+
+## Materiais Adicionais
+
+- Documentação oficial do React em Português: https://pt-br.react.dev/learn/your-first-component
