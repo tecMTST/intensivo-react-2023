@@ -1,2 +1,7 @@
-1. Utilizar algo que precise de Import/Export
-1. Alunos fazem o primeiro componente do site
+1. Fazer o primeiro componente novo, [instruções](https://github.com/tecMTST/intensivo-react-2023/blob/main/semana-2/criando_componente.md)
+  a. Você notou como o import e o export funcionam? Porque precisamos deles?
+2. Como reutilizar um componente? Você sabe repeti-lo na página? Precisa repetir todo o código?
+  a. O que é 'definir' um componente, e o que é 'chamar' um componente?
+3. E se eu quiser repetir componentes mas cada um tem q se comportar de um jeitinho diferente?
+  a. Por exemplo, repita o componente `BannerInicio` em que cada um vai ter uma imagem diferente, para isso pesquise sobre `props` em react
+  b. Achou dificil? Não se preocupe. Isso vai ser tema da próxima aula ;-)
