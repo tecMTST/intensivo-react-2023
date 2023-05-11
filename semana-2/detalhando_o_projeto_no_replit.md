@@ -119,3 +119,7 @@ Algumas bibliotecas que devemos colocar dentro de `dependencies`:
 ... e por aí vai. As opções aqui são muitas. Por via de regra: **em `dependencies` vai toda biblioteca que adiciona alguma funcionalidade que impacta diretamente as pessoas usando**.
 
 Bibliotecas que devemos colocar dentro de `devDependencies`: quaisquer bibliotecas que são utilizadas somente antes ou durante a tradução do React para HTML, CSS e JS.
+
+## Próximo passo
+
+Agora que já entendemos melhor a estrutura do projeto, vamos voltar para [o arquivo principal aula, clicando aqui](./README.md).
