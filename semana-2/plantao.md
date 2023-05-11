@@ -1,4 +1,4 @@
-1. Fazer o primeiro componente novo, [instruções](https://github.com/tecMTST/intensivo-react-2023/blob/main/semana-2/criando_componente.md)
+1. Fazer o primeiro componente novo, [instruções](https://github.com/tecMTST/intensivo-react-2023/blob/main/semana-2/criando_componente.md)<br>
   a. Você notou como o import e o export funcionam? Porque precisamos deles?
 2. Como reutilizar um componente? Você sabe repeti-lo na página? Precisa repetir todo o código?
   a. O que é 'definir' um componente, e o que é 'chamar' um componente?
