@@ -63,3 +63,5 @@ export default function App() {
 ```
 
 Tudo pronto! basta rodar o projeto agora para vermos nosso mais novo componente.
+
+[Acesse o próximo passo do conteúdo aqui](./detalhando_o_projeto_no_replit.md).
