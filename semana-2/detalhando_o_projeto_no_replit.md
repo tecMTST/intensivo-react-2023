@@ -122,4 +122,4 @@ Bibliotecas que devemos colocar dentro de `devDependencies`: quaisquer bibliotec
 
 ## Próximo passo
 
-Agora que já entendemos melhor a estrutura do projeto, vamos voltar para [o arquivo principal aula, clicando aqui](./README.md).
+Agora que já entendemos melhor a estrutura do projeto, vamos aos próximos passos lá no [arquivo principal Aula 2, clicando aqui](./README.md#próximos-passos).
