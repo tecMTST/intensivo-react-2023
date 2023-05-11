@@ -1,5 +1,5 @@
 # Criando um componente
-Vamos criar um componente e inserí-lo no site agora que entendemos um pouco melhor como os elementos são renderizados na página e como funciona a estrutura de um projeto utilizando React.
+Vamos exercitar a criação de um componente novo, dessa vez iniciando já com o Site do Núcleo de Tecnologia do MTST. Durante este processo como funciona a estrutura de um projeto utilizando React.
 
 ## Codando o componente propriamente dito
 Para inciar criando um novo componente vamos utilizar um tempalte de React pronto que está no [Repl.it](https://replit.com/@replit/React-Javascript?v=1).<br>
