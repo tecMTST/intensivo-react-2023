@@ -1,9 +1,9 @@
 # Criando um componente
-Vamos criar um componente e inseri-lo no DOM agora que entendemos um pouco melhor como os elementos são renderizados na página e como funciona a estrutura de um projeto utilizando React.
+Vamos criar um componente e inseri-lo no site agora que entendemos um pouco melhor como os elementos são renderizados na página e como funciona a estrutura de um projeto utilizando React.
+
 ## Codando o componente propriamente dito
 Para inciar criando um novo componente vamos utilizar um tempalte de React pronto que está no [Repl.it](https://replit.com/@replit/React-Javascript?v=1).<br>
-Dentro da pasta `src` crie uma outra pasta para guardarmos o código dos componentes chamada  `components` e dentro dela vamos adicionar dois arquivos, o `Banner.jsx` e o `Banner.css`.
-<br>
+Dentro da pasta `src` crie uma outra pasta para guardarmos o código dos componentes chamada  `componentes` e dentro dela vamos adicionar dois arquivos, o `BannerInicio.jsx` e o `BannerInicio.css`.
 
 Em `./src/componentes/BannerInicio.jsx`:
 ```jsx
@@ -20,7 +20,9 @@ export default function BannerInicio() {
   )
 }
 ```
+
 Em `./src/componentes/BannerInicio.css`:
+
 ```css
 #container-banner-inicio {
   background-color: #FFF5E6;
@@ -40,9 +42,9 @@ Em `./src/componentes/BannerInicio.css`:
 
 Agora tente rodar o projeto...<br>
 
-Nada vai acontecer, isso porque ainda nao inserimos o nosso componente recém criado para ser exibido no DOM.<br>
+Nada vai acontecer, isso porque ainda não inserimos o nosso componente recém criado para ser exibido no site.<br>
 
-## Inserindo o componente no DOM
+## Inserindo o componente novo na tela
 
 Para fazer isso vamos ter que inserir nosso componente na porta de entrada para os componentes React, o `App.jsx`.<br>
 
@@ -50,13 +52,14 @@ Para fazer isso vamos ter que inserir nosso componente na porta de entrada para 
 Em `./App.jsx`:
 ```jsx
 import './App.css'
-import Banner from './components/Banner'
+import BannerInicio from './componentes/BannerInicio'
 export default function App() {
   return (
     <main>
-      <Banner></Banner>
+      <BannerInicio></BannerInicio>
     </main>
   )
 }
 ```
-Tudo pronto! basta rodar o projeto agora
+
+Tudo pronto! basta rodar o projeto agora para vermos nosso mais novo componente.
