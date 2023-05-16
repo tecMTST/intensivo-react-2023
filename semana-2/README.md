@@ -20,10 +20,6 @@ Note que essa próxima seção tem 6 cards. Cada card será um componente, como 
 
 **Na Próxima aula vamos explorar as propriedades e como passar informações de um componente para o outro**.
 
-### Bonus
-
-
-
 ## Materiais Adicionais
 
 - Documentação oficial do React em Português: https://pt-br.react.dev/learn/your-first-component
