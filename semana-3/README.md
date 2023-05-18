@@ -74,7 +74,7 @@ E, agora no `App` chamar dessa forma:
 
 Na tela agora vai mostrar "Bom dia, Pedro!". E se você fizer assim:
 
-```jsx
+```html
 <DigaBomDia nome='Pedro'/>
 <DigaBomDia nome='João'/>
 <DigaBomDia nome='Maria'/>
