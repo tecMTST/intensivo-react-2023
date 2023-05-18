@@ -179,19 +179,13 @@ Com essa alteração ja teremos os cards lado a lado, mas eles ainda estão gran
 
 ```css
 .container-card-modal {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
   margin-left: 24px;
   margin-right: 24px;
-
-  cursor: pointer;
 }
 
 .container-card-modal img {
   border-radius: 8px;
   width: 100%;
-  height: 100%;
 }
 
 ```
