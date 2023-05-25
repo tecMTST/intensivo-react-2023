@@ -2,9 +2,7 @@
 
 ## Olhando para o site e planejando o que vamos fazer hoje
 
-Hoje vamos começar analisando um site e criando componentes com base nele. Vamos dar uma olhada na seção "Sobre" e na seção "Contribua com o Núcleo". Vamos identificar as semelhanças e diferenças entre essas seções.
-
-Ao examinar a seção "Sobre" e a seção "Contribua com o Núcleo", é importante observar tanto as semelhanças quanto as diferenças entre elas. Analise os elementos visuais, o posicionamento do conteúdo e o comportamento interativo dos elementos.
+Vamos dar uma olhada na seção "Sobre" e na seção "Contribua com o Núcleo". Vamos identificar as semelhanças e diferenças entre essas seções. Analise os elementos visuais, o posicionamento do conteúdo e o comportamento interativo dos elementos.
 
 Identificar semelhanças:
 - Ambas as seções podem ter um título ou cabeçalho que as identifica.
