@@ -88,7 +88,6 @@ Aplicar CSS:
   background-color: #db4682;
   padding: 40px 200px;
   color: white;
-  height: fit-content;
 }
 
 .secaoSobre h2{
