@@ -236,3 +236,7 @@ Erros:
 
 - O componente `MaiorDeIdade` foi importado errado no `App.jsx`
 - O componente `MaiorDeIdade` foi importado errado no `EscolaDeDirecao.jsx`
+- Os props do componente `CartaoCPF` não estão funcionando própriamente
+- O componente `SalaDeEspera` não esta funcionando
+
+Inclua um componente de cada vez, conforme for arrumando os erros.
