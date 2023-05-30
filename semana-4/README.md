@@ -8,6 +8,7 @@
   - [Exercícios](#exercícios-1)
 - [JavaScript com React](#javascript-com-react)
   - [Exercícios](#exercícios-2)
+- [Replit com Erros](#replit-com-erros)
 
 Conforme chegamos ao meio de nosso intensivão, é bom relembrar alguns tópicos chaves e reforçar seus usos.
 
@@ -155,6 +156,13 @@ Na língua que o React entende, escrevemos:
 
 > `./componentes/iniciativas/CardIniciativa.jsx`
 
+Mas e se quisermos acessar o CardIniciativa dentro da SecaoSobre?
+Como instruções, podemos dizer: _"volte uma pasta, entre na pasta iniciativas, e use o componente CardIniciativa"_
+
+Na língua que o React entende, a instrução de _voltar uma pasta_, é feita como `..`:
+
+> `../iniciativas/CardIniciativa.jsx`
+
 ## Exercícios
 
 Considerando nossas pastas, como podemos escrever as instruções para o React acessar os seguintes componentes a partir do `App.jsx`:
@@ -162,6 +170,8 @@ Considerando nossas pastas, como podemos escrever as instruções para o React a
 1. `SecaoIniciativas.jsx`
 2. `SecaoContribua.jsx`
 3. `BannerInicio.jsx`
+
+Como desafio, tente acessar o `App.jsx` a partir do `Botao.jsx`.
 
 # JavaScript com React
 
@@ -189,7 +199,40 @@ Essa função nos retorna uma mensagem que nos diz se a pessoa pode ou não diri
 
 A nossa lógica JavaScript acontece antes do `return`, e dentro do valor de retorno, usamos a mensagem dentro dos bigodinhos.
 
+Uma outra questão importante sobre o `return` do React especificamente, é que o return só pode ter um elemento HTML.
+No nosso componente `MaiorDeIdade`, todo o conteúdo do componente fica dentro de uma única `div`.
+Se você parar pra observar, todos os `return` de nossos componentes também vão estar dentro de uma `div`.
+
+Por exemplo, o seguinte `return` é invalido:
+
+```jsx
+return (
+  <h1>Titulo</h1>
+  <p>conteudo</p>
+)
+```
+
+Pra ficar valido, podemos colocar tudo dentro de uma única `div`:
+
+```jsx
+return (
+  <div>
+    <h1>Titulo</h1>
+    <p>conteudo</p>
+  </div>
+);
+```
+
 ## Exercícios
 
 Crie um componente que receba uma `palavraChave` dentro de `props`, e nos devolva uma mensagem de "Pode entrar" se a palavra chave estiver correta ou "Não pode entrar" se a palavra estiver incorreta.
 Você pode escolher a palavra chave que quiser.
+
+# Replit com Erros
+
+O seguinte replit possui alguns erros. Poderia nos ajudar a concertá-los?
+
+Erros:
+
+- O componente `MaiorDeIdade` foi importado errado no `App.jsx`
+- O componente `MaiorDeIdade` foi importado errado no `EscolaDeDirecao.jsx`
