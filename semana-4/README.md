@@ -7,7 +7,7 @@
 - [Navegando Arquivos](#navegando-arquivos)
   - [Exercícios](#exercícios-1)
 - [JavaScript com React](#javascript-com-react)
-- [Props do React](#props-do-react)
+  - [Exercícios](#exercícios-2)
 
 Conforme chegamos ao meio de nosso intensivão, é bom relembrar alguns tópicos chaves e reforçar seus usos.
 
@@ -166,7 +166,30 @@ Considerando nossas pastas, como podemos escrever as instruções para o React a
 # JavaScript com React
 
 O React nos permite usar HTML e JavaScript juntos. Antes a gente precisava criar coisas em arquivos separados e ir extraíndo o HTML a partir do JavaScript.
-
 Apesar do React facilitar bastante as coisas nesse sentido, a mistura de JavaScript com HTML pode ser um pouco confusa de entender.
 
-# Props do React
+A idéia principal a se entender é que o JavaScript sempre aparece dentro dos bigodinhos (`{}`) no HTML.
+
+Na seguinte função, recebemos uma idade dentro do `props`:
+
+```jsx
+export default function MaiorDeIdade(props) {
+  let mensagem = "Pode dirigir";
+  if (props.idade < 18) mensagem = "Nao pode dirigir";
+
+  return (
+    <div>
+      <h2>{mensagem}</h2>
+    </div>
+  );
+}
+```
+
+Essa função nos retorna uma mensagem que nos diz se a pessoa pode ou não dirigir dependendo da idade.
+
+A nossa lógica JavaScript acontece antes do `return`, e dentro do valor de retorno, usamos a mensagem dentro dos bigodinhos.
+
+## Exercícios
+
+Crie um componente que receba uma `palavraChave` dentro de `props`, e nos devolva uma mensagem de "Pode entrar" se a palavra chave estiver correta ou "Não pode entrar" se a palavra estiver incorreta.
+Você pode escolher a palavra chave que quiser.
