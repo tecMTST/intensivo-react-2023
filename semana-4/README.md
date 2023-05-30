@@ -24,6 +24,42 @@ Para reforçar essas idéias, estaremos fazendo alguns exercícios juntos.
 
 # Navegando Arquivos
 
+Conforme adicionamos mais componentes no nosso site, a estrutura de nossos arquivos vai ficando cada vez mais complexa.
+No momento em que finalizamos a [Aula 3](../semana-3/README.md), nossos arquivos estavam organizados dessa forma:
+
+```
+.
+│   App.css
+│   App.jsx
+│   index.jsx
+│
+└───componentes
+    │   BannerInicio.css
+    │   BannerInicio.jsx
+    │
+    ├───botao
+    │       Botao.css
+    │       Botao.jsx
+    │
+    ├───iniciativas
+    │       CardIniciativa.css
+    │       CardIniciativa.jsx
+    │       SecaoIniciativas.css
+    │       SecaoIniciativas.jsx
+    │
+    └───secaoSobre
+            SecaoContribua.css
+            SecaoContribua.jsx
+            SecaoSobre.css
+            SecaoSobre.jsx
+            SecaoSobreComBotao.jsx
+            SecaoSobreComChildren.jsx
+```
+
+Temos a pasta `componentes`, e dentro dela criamos 3 outras pastas: `botao`, `iniciativas` e `secaoSobre`.
+
+Quando queremos falar pro React usar um componente no `App.jsx`, nós temos que explicar onde exatamente ele tem que ir procurar nosso componente.
+
 # JavaScript com React
 
 # Props do React
