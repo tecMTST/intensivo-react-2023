@@ -232,6 +232,10 @@ Você pode escolher a palavra chave que quiser.
 
 O seguinte replit possui alguns erros. Poderia nos ajudar a concertá-los?
 
+[REPLIT](https://replit.com/@ntmtst/IntensivaoReactRevisaoAula5)
+
+Faça um garfo desse Replit. Para aprender como fazer um garfo, veja a seguinte página: [Fork No Replit](./garfo_replit.md)
+
 Erros:
 
 - O componente `MaiorDeIdade` foi importado errado no `App.jsx`
