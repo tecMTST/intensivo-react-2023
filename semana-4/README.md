@@ -2,17 +2,17 @@
 
 - [Aula 4](#aula-4)
   - [Objetivos](#objetivos)
-- [Funções no JavaScript](#funções-no-javascript)
-  - [Exercícios](#exercícios)
-- [Navegando Arquivos](#navegando-arquivos)
-  - [Exercícios](#exercícios-1)
-- [JavaScript com React](#javascript-com-react)
-  - [Exercícios](#exercícios-2)
-- [Replit com Erros](#replit-com-erros)
+  - [Funções no JavaScript](#funções-no-javascript)
+    - [Exercícios](#exercícios)
+  - [Navegando Arquivos](#navegando-arquivos)
+    - [Exercícios](#exercícios-1)
+  - [JavaScript com React](#javascript-com-react)
+    - [Exercícios](#exercícios-2)
+  - [Replit com Erros](#replit-com-erros)
 
 Conforme chegamos ao meio de nosso intensivão, é bom relembrar alguns tópicos chaves e reforçar seus usos.
 
-### Objetivos
+## Objetivos
 
 Nesta aula, revisitaremos os seguintes tópicos:
 
@@ -23,7 +23,7 @@ Nesta aula, revisitaremos os seguintes tópicos:
 
 Para reforçar essas idéias, estaremos fazendo alguns exercícios juntos.
 
-# Funções no JavaScript
+## Funções no JavaScript
 
 As funções no JavaScript possuem dois conceitos fundamentais: _parâmetros_ e _retorno_.
 
@@ -96,11 +96,11 @@ export default function CartaoRG(props) {
 }
 ```
 
-## Exercícios
+### Exercícios
 
 Escreva um componente simples CNH, no estilo do CartaoRG, que receba: nome, dataExpiracao, foto, idade.
 
-# Navegando Arquivos
+## Navegando Arquivos
 
 Conforme adicionamos mais componentes no nosso site, a estrutura de nossos arquivos vai ficando cada vez mais complexa.
 No momento em que finalizamos a [Aula 3](../semana-3/README.md), nossos arquivos estavam organizados na seguinte forma:
@@ -163,7 +163,7 @@ Na língua que o React entende, a instrução de _voltar uma pasta_, é feita co
 
 > `../iniciativas/CardIniciativa.jsx`
 
-## Exercícios
+### Exercícios
 
 Considerando nossas pastas, como podemos escrever as instruções para o React acessar os seguintes componentes a partir do `App.jsx`:
 
@@ -173,7 +173,7 @@ Considerando nossas pastas, como podemos escrever as instruções para o React a
 
 Como desafio, tente acessar o `App.jsx` a partir do `Botao.jsx`.
 
-# JavaScript com React
+## JavaScript com React
 
 O React nos permite usar HTML e JavaScript juntos. Antes a gente precisava criar coisas em arquivos separados e ir extraíndo o HTML a partir do JavaScript.
 Apesar do React facilitar bastante as coisas nesse sentido, a mistura de JavaScript com HTML pode ser um pouco confusa de entender.
@@ -223,12 +223,12 @@ return (
 );
 ```
 
-## Exercícios
+### Exercícios
 
 Crie um componente que receba uma `palavraChave` dentro de `props`, e nos devolva uma mensagem de "Pode entrar" se a palavra chave estiver correta ou "Não pode entrar" se a palavra estiver incorreta.
 Você pode escolher a palavra chave que quiser.
 
-# Replit com Erros
+## Replit com Erros
 
 O seguinte replit possui alguns erros. Poderia nos ajudar a concertá-los?
 
