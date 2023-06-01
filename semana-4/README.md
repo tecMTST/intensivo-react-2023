@@ -1,246 +1,307 @@
 # Aula 4
 
-- [Aula 4](#aula-4)
-  - [Objetivos](#objetivos)
-  - [Funções no JavaScript](#funções-no-javascript)
-    - [Exercícios](#exercícios)
-  - [Navegando Arquivos](#navegando-arquivos)
-    - [Exercícios](#exercícios-1)
-  - [JavaScript com React](#javascript-com-react)
-    - [Exercícios](#exercícios-2)
-  - [Replit com Erros](#replit-com-erros)
+## Olhando para o site e planejando o que vamos fazer hoje
 
-Conforme chegamos ao meio de nosso intensivão, é bom relembrar alguns tópicos chaves e reforçar seus usos.
+Vamos dar uma olhada na seção "Sobre" e na seção "Contribua com o Núcleo". Vamos identificar as semelhanças e diferenças entre essas seções. Analise os elementos visuais, o posicionamento do conteúdo e o comportamento interativo dos elementos.
 
-## Objetivos
+Identificar semelhanças:
 
-Nesta aula, revisitaremos os seguintes tópicos:
+- Ambas as seções podem ter um título ou cabeçalho que as identifica.
+- Ambas podem conter texto descritivo que explica o propósito da seção.
+- Pode haver um botão ou link que leva a outra página ou seção do site.
 
-- retornos de parâmetros e funções
-- `import`/`export`: navegação em arquivos
-- código JavaScript dentro do componente react
-- uso de `props` no React
+Identificar diferenças:
 
-Para reforçar essas idéias, estaremos fazendo alguns exercícios juntos.
+- A seção "Contribua com o Núcleo" vai ter uma imagem
+- A seção "Sobre" vai ter um botão.
 
-## Funções no JavaScript
+Agora que temos uma compreensão básica do que queremos criar, vamos começar a fazer o componente da seção "Sobre".
 
-As funções no JavaScript possuem dois conceitos fundamentais: _parâmetros_ e _retorno_.
+## Fazendo o componente da seção "Sobre"
 
-Uma função típica do JavaScript é declarada da seguinte forma:
+Para criar o componente da seção "Sobre", precisamos definir um nome descritivo para ele. Vamos chamá-lo de `SecaoSobre`.
 
-```js
-function nomeDaFuncao(parametros) {
-  // codigo
-  return valorDeRetorno;
-}
-```
+Quais props podemos usar?
+Aqui estão algumas props que podemos usar para tornar nosso componente mais flexível e reutilizável:
 
-Funções são como fábricas, que recebem um material de entrada (os _parâmetros_), fazem algum tipo de processo com o material, e retornam um produto final (o _retorno_).
+- `titulo`: uma prop que recebe o título da seção.
+- `textoSimples`: uma prop que recebe o texto descritivo simples da seção.
+- `textoDestaque`: uma prop que recebe o texto descritivo de destaque da seção.
 
-Por exemplo, uma fábrica de carros pode receber como material de entrada quatro portas, quatro rodas, e a cabine do carro.
-O processo dentro da fábrica é a montagem do carro, e o produto final é um carro montado:
+Como o componente vai ficar:
 
 ```js
-function fabricaDeCarros(portas, rodas, cabine) {
-  // ..codigo para a montagem do carro
-  return carroPronto;
-}
-```
+import "./SecaoSobre.css";
 
-Como um exemplo mais concreto, podemos fazer uma função que multiplica dois números.
-Como material de entrada (_parâmetro_), passamos dois números e como produto final (_retorno_), temos a multiplicação desses dois números.
-
-```js
-function multiplicacao(numero1, numero2) {
-  let resultado = numero1 * numero2;
-  return resultado;
-}
-```
-
-É importante manter em mente que o `return` funciona como a saída de nossa fábrica. Então, qualquer coisa que escrevermos depois, não vai fazer parte do nosso código!
-
-O react usa essa noção de fábrica para construirmos nossos componentes.
-
-Por exemplo, nosso componente de `CardIniciativa`:
-
-```jsx
-export default function CardIniciativa(props) {
+export default function SecaoSobre(props) {
   return (
-    <div className="container-card-modal">
-      <img src={props.imagem} />
-      <h4>{props.nome}</h4>
+    <div className="secaoSobre">
+      <h2>{props.titulo.toUpperCase()}</h2>
+      <div className="secaoSobreConteudo">
+        <p>{props.textoSimples}</p>
+        <p>
+          <b>{props.textoDestaque}</b>
+        </p>
+      </div>
     </div>
   );
 }
 ```
 
-Recebemos o material de entrada (_parâmetros_): `props`
+### Button, a, href e target:
 
-E temos um produto final (_retorno_): `return`
+Dentro do componente `SecaoSobre`, podemos usar um elemento de botão (`<button>`) ou um elemento de link (`<a>`) para o botão da seção. A escolha depende do comportamento esperado.
 
-Duas grandes diferenças são: os parametros ficam todos dentro do `props`; e o retorno é mais complexo e envolve HTML.
+- Se quisermos que o botão execute uma ação no próprio site, podemos usar o elemento de botão.
+- Se quisermos redirecionar para outra página ou site, podemos usar o elemento de link.
 
-Podemos expandir essas idéias para pensar outros componentes.
-Por exemplo, se tivermos um componente CartaoRG que recebe como parâmetros (`props`): foto, nome, numeroRG.
+Ao usar o elemento `<a>` com o atributo `href` e `target="_blank"`, o link será aberto em uma nova aba ou janela do navegador.
 
-```jsx
-export default function CartaoRG(props) {
+### Diferença do mouse no hover:
+
+Uma diferença notável ao interagir com os elementos do site pode ser a alteração do estilo quando o mouse está em cima deles. Por exemplo, o ícone do mouse mude de um para outro, no <a> ele vira uma mãozinha, no <button> não.
+
+Adicionando o botão com a tag <a> no componente:
+
+```js
+import "./SecaoSobre.css";
+
+export default function SecaoSobre(props) {
   return (
-    <div>
-      <img src={props.foto} />
-      <h3>{props.nome}</h3>
-      <h4>{props.numeroRG}</h4>
+    <div className="secaoSobre">
+      <h2>{props.titulo.toUpperCase()}</h2>
+      <div className="secaoSobreConteudo">
+        <p>{props.textoSimples}</p>
+        <p>
+          <b>{props.textoDestaque}</b>
+        </p>
+      </div>
+      <button>
+        <a href="https://www.instagram.com/tecnologia.mtst/" target="_blank">
+          Siga nosso Instagram
+        </a>
+      </button>
     </div>
   );
 }
 ```
 
-### Exercícios
+Aplicar CSS:
 
-Escreva um componente simples CNH, no estilo do CartaoRG, que receba: nome, dataExpiracao, foto, idade.
+```css
+.secaoSobre {
+  background-color: #db4682;
+  padding: 40px 200px;
+  color: white;
+}
 
-## Navegando Arquivos
+.secaoSobre h2 {
+  font-size: 60px;
+  margin: 0;
+}
 
-Conforme adicionamos mais componentes no nosso site, a estrutura de nossos arquivos vai ficando cada vez mais complexa.
-No momento em que finalizamos a [Aula 3](../semana-3/README.md), nossos arquivos estavam organizados na seguinte forma:
+.secaoSobreConteudo {
+  font-size: 40px;
+  color: white;
+}
 
-![Pastas](folders0.jpg)
+.secaoSobre a {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: large;
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-Uma descrição mais detalhada de nossos arquivos:
+.secaoSobre a:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
 
+.secaoSobre button {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
 ```
-.
-│   App.css
-│   App.jsx
-│   index.jsx
-│
-└───componentes
-    │   BannerInicio.css
-    │   BannerInicio.jsx
-    │
-    ├───botao
-    │       Botao.css
-    │       Botao.jsx
-    │
-    ├───iniciativas
-    │       CardIniciativa.css
-    │       CardIniciativa.jsx
-    │       SecaoIniciativas.css
-    │       SecaoIniciativas.jsx
-    │
-    └───secaoSobre
-            SecaoContribua.css
-            SecaoContribua.jsx
-            SecaoSobre.css
-            SecaoSobre.jsx
-            SecaoSobreComBotao.jsx
-            SecaoSobreComChildren.jsx
-```
 
-Temos a pasta `componentes`, e dentro dela criamos 3 outras pastas: `botao`, `iniciativas` e `secaoSobre`.
-Além disso, a pasta `componentes` também contém os arquivos `BannerInicio.css` e `BannerInicio.jsx`, que não estão dentro de outra pasta.
+## Fazendo a seção 'Contribua com o Núcleo'
 
-Quando queremos falar pro React usar um componente no `App.jsx`, nós temos que explicar onde exatamente ele tem que ir procurar nosso componente.
-Por exemplo, para fazer o `import` do `CardInitiativa.jsx` dentro de `App.jsx`, precisamos passar as instruções de como chegar ao `CardIniciativa` _a partir_ do `App.jsx`.
+Agora vamos criar a seção "Contribua com o Núcleo", que terá uma estrutura semelhante à seção "Sobre". No entanto, há algumas diferenças importantes:
 
-Do ponto de vista do `App.jsx`, temos que entrar na pasta `componentes`, depois disso, já dentro da pasta componentes, entramos na pasta `iniciativas`:
+Props que serão criadas:
 
-![Card iniciativa](folders1_iniciativas.jpg)
+- `titulo`: recebe o título da seção.
+- `textoSimples1`: recebe um texto simples.
+- `textoDestaque1`: recebe um texto em destaque.
+- `textoDestaque2`: recebe outro texto em destaque.
+- `textoSimples2`: recebe um segundo texto simples.
+- Em vez de um botão, a seção "Contribua com o Núcleo" terá uma imagem.
 
-Explicando em português, podemos dizer:
+Aqui está o código JavaScript final para o componente `SecaoContribua`:
 
-> _"Entre na pasta **componentes**, depois entre na pasta iniciativas, aí você vai encontrar o componente CardIniciativa"_
+```js
+import "./SecaoContribua.css";
 
-Na língua que o React entende, escrevemos:
-
-> `./componentes/iniciativas/CardIniciativa.jsx`
-
-Mas e se quisermos acessar o CardIniciativa dentro da SecaoSobre?
-Como instruções, podemos dizer: _"volte uma pasta, entre na pasta iniciativas, e use o componente CardIniciativa"_
-
-Na língua que o React entende, a instrução de _voltar uma pasta_, é feita como `..`:
-
-> `../iniciativas/CardIniciativa.jsx`
-
-### Exercícios
-
-Considerando nossas pastas, como podemos escrever as instruções para o React acessar os seguintes componentes a partir do `App.jsx`:
-
-1. `SecaoIniciativas.jsx`
-2. `SecaoContribua.jsx`
-3. `BannerInicio.jsx`
-
-Como desafio, tente acessar o `App.jsx` a partir do `Botao.jsx`.
-
-## JavaScript com React
-
-O React nos permite usar HTML e JavaScript juntos. Antes a gente precisava criar coisas em arquivos separados e ir extraíndo o HTML a partir do JavaScript.
-Apesar do React facilitar bastante as coisas nesse sentido, a mistura de JavaScript com HTML pode ser um pouco confusa de entender.
-
-A idéia principal a se entender é que o JavaScript sempre aparece dentro dos bigodinhos (`{}`) no HTML.
-
-Na seguinte função, recebemos uma idade dentro do `props`:
-
-```jsx
-export default function MaiorDeIdade(props) {
-  let mensagem = "Pode dirigir";
-  if (props.idade < 18) mensagem = "Nao pode dirigir";
-
+export default function SecaoContribua(props) {
   return (
-    <div>
-      <h2>{mensagem}</h2>
+    <div className="secaoContribua">
+      <h2>{props.titulo.toUpperCase()}</h2>
+      <div className="secaoContribuaConteudo">
+        <p>{props.textoSimples1}</p>
+        <p>
+          <b>{props.textoDestaque1}</b>
+        </p>
+        <p>
+          <b>{props.textoDestaque2}</b>
+        </p>
+        <p>{props.textoSimples2}</p>
+      </div>
+      <img src="https://nucleodetecnologia.com.br/assets/img/pix-mtst.jpg" />
     </div>
   );
 }
 ```
 
-Essa função nos retorna uma mensagem que nos diz se a pessoa pode ou não dirigir dependendo da idade.
+Aqui está o código CSS final para estilizar o componente `SecaoContribua`:
 
-A nossa lógica JavaScript acontece antes do `return`, e dentro do valor de retorno, usamos a mensagem dentro dos bigodinhos.
+```css
+.secaoContribua {
+  background-color: #db4682;
+  padding: 40px 200px;
+  color: white;
+  height: fit-content;
+}
 
-Uma outra questão importante sobre o `return` do React especificamente, é que o return só pode ter um elemento HTML.
-No nosso componente `MaiorDeIdade`, todo o conteúdo do componente fica dentro de uma única `div`.
-Se você parar pra observar, todos os `return` de nossos componentes também vão estar dentro de uma `div`.
+.secaoContribua h2 {
+  font-size: 60px;
+  margin: 0;
+}
 
-Por exemplo, o seguinte `return` é invalido:
+.secaoContribuaConteudo {
+  font-size: 40px;
+}
 
-```jsx
-return (
-  <h1>Titulo</h1>
-  <p>conteudo</p>
-)
+.secaoContribua img {
+  width: 350px;
+}
 ```
 
-Pra ficar valido, podemos colocar tudo dentro de uma única `div`:
+Neste exemplo, aplicamos estilos ao componente `SecaoContribua` usando classes CSS. Definimos o fundo, o espaçamento interno, a cor do texto e a altura do componente.
 
-```jsx
-return (
-  <div>
-    <h1>Titulo</h1>
-    <p>conteudo</p>
-  </div>
-);
+---
+
+## Fazendo um componente para o botão
+
+Agora vamos criar um componente para o botão, chamado `Botao`. Antes disso, vamos abordar o conceito de `props.children` e explorar seus usos mais comuns.
+
+`props.children` é uma prop especial no React que permite passar elementos filhos para um componente. Esses elementos podem ser outros componentes, texto ou até mesmo estruturas mais complexas. É uma forma flexível de compor componentes e torná-los mais reutilizáveis.
+
+> Vamos explorar as props usando `console.log()`!
+
+Aqui está o código JavaScript final para o componente `Botao`:
+
+```js
+import "./Botao.css";
+
+export default function Botao(props) {
+  return (
+    <button className="botaoComponente">
+      <a href={props.levaPraOnde} target="_blank">
+        {props.children}
+      </a>
+    </button>
+  );
+}
 ```
 
-### Exercícios
+Agora que temos nosso componente `Botao`, podemos utilizá-lo em outros componentes, passando o conteúdo desejado como `props.children`. Por exemplo, podemos usar o componente `Botao` dentro da seção "Sobre" para substituir o botão existente:
 
-Crie um componente que receba uma `palavraChave` dentro de `props`, e nos devolva uma mensagem de "Pode entrar" se a palavra chave estiver correta ou "Não pode entrar" se a palavra estiver incorreta.
-Você pode escolher a palavra chave que quiser.
+```jsx
+<Botao levaPraOnde="https://www.exemplo.com">Saiba mais</Botao>
+```
 
-## Replit com Erros
+O conteúdo "Saiba mais" será renderizado dentro do componente `Botao` como seu `props.children`.
 
-O seguinte replit possui alguns erros. Poderia nos ajudar a concertá-los?
+Aqui está o código CSS final para estilizar o componente `Botao`:
 
-[REPLIT](https://replit.com/@ntmtst/IntensivaoReactRevisaoAula5)
+```css
+.botaoComponente a {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: large;
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-Faça um garfo desse Replit. Para aprender como fazer um garfo, veja a seguinte página: [Fork No Replit](./garfo_replit.md)
+.botaoComponente a:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
 
-Erros:
+.botaoComponente {
+  border: none;
+  background-color: transparent;
+  margin: 0 0 30px 0;
+}
+```
 
-- O componente `MaiorDeIdade` foi importado errado no `App.jsx`
-- O componente `MaiorDeIdade` foi importado errado no `EscolaDeDirecao.jsx`
-- Os props do componente `CartaoCPF` não estão funcionando própriamente
-- O componente `SalaDeEspera` não esta funcionando
+Aqui está o código CSS atualizado para a seção "Sobre" utilizando o componente `Botao`:
 
-Inclua um componente de cada vez, conforme for arrumando os erros.
+```css
+.secaoSobre {
+  background-color: #db4682;
+  padding: 40px 200px;
+  color: white;
+  height: fit-content;
+}
+
+.secaoSobre h2 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.secaoSobreConteudo {
+  font-size: 40px;
+  color: white;
+}
+
+.secaoSobre a {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: large;
+  padding: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+```
+
+Continue praticando e explorando o React!
+
+## Referências
+
+- React:
+
+  - [Documentação oficial do React](https://reactjs.org/docs/getting-started.html)
+  - [Tutorial do React no MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
+
+- Props:
+  - [Componentes e Props no React](https://pt-br.reactjs.org/docs/components-and-props.html)
+  - [Understanding React `children` Utilities](https://www.freecodecamp.org/news/react-children-api-explained/)
+- CSS:
+  - [Guia de CSS do MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guide)
+  - [Box model no CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/box_model)
+  - [Seletores CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Referencia_de_seletores)
