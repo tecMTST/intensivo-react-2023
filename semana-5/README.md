@@ -99,6 +99,7 @@ export default function CartaoRG(props) {
 ### Exercícios
 
 Escreva um componente simples CNH, no estilo do CartaoRG, que receba: nome, dataExpiracao, foto, idade.
+Mostre esses props dentro de tags `<p>`.
 
 ## Navegando Arquivos
 
