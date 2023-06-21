@@ -14,7 +14,7 @@ Em programação, especialmente em JavaScript, uma biblioteca é como uma caixa 
 
 Vamos utilizar a biblioteca para trazer alguns icones interessantes para o uso no site, para isso vamos utilizar a biblioteca [`react-icons`](https://react-icons.github.io/react-icons/) mas antes de vermos como usar esta biblioteca vamos primeiro criar os componentes onde serão usadas.
 
-Se abrirmos o site do nucleo vamos ver que a seção do rodapé pode ser subdividida em 2 partes, que vamos chamar de SecaoRodape e ColunaRodape
+Se abrirmos o site do núcleo vamos ver que a seção do rodapé pode ser subdividida em 2 partes, que vamos chamar de SecaoRodape e ColunaRodape
 ![secaoRodape](./secaoRodape.png)
 
 Com isso em mente vamos criar nossos dois novos componentes.
@@ -193,3 +193,5 @@ export default function ColunaRodape(props) {
   )
 }
 ```
+
+Resultado final: [Repl.it](https://replit.com/@ntmtst-curso-online-dev-web/SiteNTMTST-react)
