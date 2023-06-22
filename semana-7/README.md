@@ -184,16 +184,34 @@ export default function SecaoRodape() {
 }
 ```
 
-e o ColunaRodape
-Em `./src/componentes/rodape/ColunaRodape.jsx`:
-```js
-import './ColunaRodape.css';
-
-export default function ColunaRodape(props) {
-  return (
-    <div className="colunaRodape">{props.children}</div>
-  )
-}
-```
+E o **ColunaRodape** não tem alteração.
 
 Resultado final: [Repl.it](https://replit.com/@ntmtst-curso-online-dev-web/SiteNTMTST-react)
+
+## Estrutura final do projeto
+
+```
+.
+├── App.css
+├── App.jsx
+├── componentes
+│   ├── BannerInicio.css
+│   ├── BannerInicio.jsx
+│   ├── iniciativas
+│   │   ├── CardIniciativa.css
+│   │   ├── CardIniciativa.jsx
+│   │   ├── SecaoIniciativas.css
+│   │   └── SecaoIniciativas.jsx
+│   ├── rodape
+│   │   ├── ColunaRodape.css
+│   │   ├── ColunaRodape.jsx
+│   │   ├── SecaoRodape.css
+│   │   └── SecaoRodape.jsx
+│   ├── secaoContribua
+│   │   ├── SecaoContribua.css
+│   │   └── SecaoContribua.jsx
+│   └── secaoSobre
+│       ├── secaoSobre.css
+│       └── secaoSobre.jsx
+└── index.jsx
+```
