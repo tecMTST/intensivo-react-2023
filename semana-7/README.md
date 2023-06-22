@@ -1,6 +1,8 @@
 # Aula 7
 
-Nesta aula vamos dar um próximo salto no desenvolvimento de websites: vamos aprender sobre Bibliotecas e como utilizá-las na prática.
+Nesta aula vamos dar um próximo salto no desenvolvimento de websites: vamos aprender sobre Bibliotecas e como utilizá-las na prática. 
+
+**Nossa tarefa será desenvolver o Rodapé** do Site do Núcleo de Tecnologia
 
 ## O que são bibliotecas?
 
