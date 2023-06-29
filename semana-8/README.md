@@ -39,6 +39,8 @@ Se atente aos componentes que usam `props`. Além de mexer no arquivo do compone
 
 ## Exemplo Pronto com o Tema "Gatos"
 
+⚠️ Perceba que neste exemplo a Seção Sobre mudou de posição. Agora ela é exibida logo abaixo do Banner Inicio:
+
 ![Alt text](ex_site_1.png)
 ![Alt text](ex_site_2.png)
 ![Alt text](ex_site_2.png)
