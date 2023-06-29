@@ -43,7 +43,7 @@ Se atente aos componentes que usam `props`. Além de mexer no arquivo do compone
 
 ![Alt text](ex_site_1.png)
 ![Alt text](ex_site_2.png)
-![Alt text](ex_site_2.png)
+![Alt text](ex_site_3.png)
 
 ## Conclusão
 
