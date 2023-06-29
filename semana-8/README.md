@@ -41,10 +41,8 @@ Se atente aos componentes que usam `props`. Além de mexer no arquivo do compone
 
 ⚠️ Perceba que neste exemplo a Seção Sobre mudou de posição. Agora ela é exibida logo abaixo do Banner Inicio:
 
-![Alt text](ex_site_1.png)
-![Alt text](ex_site_2.png)
-![Alt text](ex_site_3.png)
+![site sample](exemplo.png)
 
 ## Conclusão
 
-Estamos animades para 
+Estamos animades para ver o que cada pessoa cria nesta etapa! Não se esqueça de compartilhar com os instrutores e seus colegas do intensivo! :D
