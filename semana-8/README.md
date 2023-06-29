@@ -45,4 +45,4 @@ Se atente aos componentes que usam `props`. Além de mexer no arquivo do compone
 
 ## Conclusão
 
-Estamos animades para ver o que cada pessoa cria nesta etapa! Não se esqueça de compartilhar com os instrutores e seus colegas do intensivo! :D
+Estamos animades para ver o que cada pessoa cria nesta etapa! Não se esqueça de compartilhar o resultado com os instrutores e seus colegas do intensivo! :D
