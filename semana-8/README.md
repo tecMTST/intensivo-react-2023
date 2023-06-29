@@ -4,9 +4,7 @@ Olá! Esta é a nossa última aula deste intensivo de React. Durante este curso,
 
 Na aula de hoje vamos criar uma cópia do Replit com o Site do Núcleo. Nesta cópia, vamos passar por todos os componentes alterando textos, imagens, cores e etc para que o site não seja mais sobre o Núcleo, **mas sim sobre qualquer outro tema que você escolher**.
 
-No exemplo da aula, o tema escolhido foi "gatos". Para seu projeto, você deve escolher outro tema: pode ser sobre objetos, animais, sobre você (página de apresentação profissional), sobre sua cidade, hobbies, atividades físicas que gosta, etc. 
-
-**A ideia principal é customizar o site para ser algo de sua escolha**.
+No exemplo da aula, o tema escolhido foi "gatos". Para seu projeto, você deve escolher outro tema: pode ser sobre objetos, animais, sobre você (página de apresentação profissional), sobre sua cidade, hobbies, atividades físicas que gosta, lugares que já visitou, lugar que mais gostou de visitar e por aí vai!  **A ideia principal é customizar o site para ser algo de sua escolha e que seja um assunto relevante para você**.
 
 ## Criando uma cópia do site
 
@@ -44,3 +42,7 @@ Se atente aos componentes que usam `props`. Além de mexer no arquivo do compone
 ![Alt text](ex_site_1.png)
 ![Alt text](ex_site_2.png)
 ![Alt text](ex_site_2.png)
+
+## Conclusão
+
+Estamos animades para 
